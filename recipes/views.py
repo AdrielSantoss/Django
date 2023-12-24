@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 def home(request):
     return render(request, 'recipes/home.html')
-# terste213
+# terste213sdf
