@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% include "news/partials/head.html" %}
+
     <title>New</title>
 </head>
 <body>
-    Teste
+    {% include "news/components/header.html" %}
+
+    <article>
+        <div id="new-container">
+            <div class="card  m-5" id="new">
+                <div class="card-header" id="card-header">
+                    <h2>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ea natus totam dolores nemo ipsam. Corrupti aspernatur
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius delectus quos asperiores ipsam incidunt doloremque, possimus iusto. Eius iure aspernatur aliquam laudantium maiores, facere, dicta amet consequuntur, in perferendis qui!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, vel? Exercitationem, reprehenderit? Eum ea error odio odit! Minus quas officia vero mollitia reprehenderit amet nostrum, perferendis praesentium sequi perspiciatis. Nostrum!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita molestias odit impedit modi est iste quam, magni placeat vero soluta sit amet fugit odio? Distinctio aliquid illum quam doloribus itaque?
+                    </p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="/">
+                        <button class="btn btn-secondary">Voltar</button>
+                    </a>
+                    <a href="/new/123">
+                        <button class="btn btn-primary">Curtir</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    {% include "news/components/footer.html" %}
 </body>
 </html>
