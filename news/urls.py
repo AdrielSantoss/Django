@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.urls import path
 
-from news.views import Home
+from news import views
 
 urlpatterns = [
-    path('', Home),
+    path('', views.Home),
+    path('new/<int:id>/', views.New),
 ]
