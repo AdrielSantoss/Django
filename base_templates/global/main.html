@@ -1,0 +1,12 @@
+{% include "news/partials/head.html" %}
+
+<body>
+    <main class="content">
+        {% include "news/components/header.html" %}
+
+        {% block content %}{% endblock content %}
+
+        {% include "news/components/footer.html" %}
+    </main>
+</body>
+</html>

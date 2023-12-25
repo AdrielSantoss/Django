@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+{% extends "global/main.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    {% include "news/partials/head.html" %}
-
-    <title>News</title>
-</head>
-
-<body>
-    <main class="content">
-        {% include "news/components/header.html" %}
+{% block content %}
         {% include "news/components/search.html" %}
         {% include "news/components/cards.html" %}
-        {% include "news/components/footer.html" %}
-    </main>
-</body>
-
-</html>
+{% endblock content %}

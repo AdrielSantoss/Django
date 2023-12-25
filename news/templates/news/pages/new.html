@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "global/main.html" %}
 
-    {% include "news/partials/head.html" %}
-
-    <title>New</title>
-</head>
-<body>
-    {% include "news/components/header.html" %}
-
+{% block content %}
     <article>
         <div id="new-container">
             <div class="card  m-5" id="new">
@@ -41,7 +31,4 @@
             </div>
         </div>
     </article>
-
-    {% include "news/components/footer.html" %}
-</body>
-</html>
+{% endblock content %}
