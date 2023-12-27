@@ -2,5 +2,13 @@
 
 {% block content %}
         {% include "news/components/search.html" %}
-        {% include "news/components/cards.html" %}
+
+        <div class="row" style="margin: 0px;">
+                {% for n in news %}
+                        <div class="col-4 mt-4" style="margin: 0px;">
+                                {% include "news/components/cards.html" with new=n %} 
+                        </div>
+                {% endfor %}
+        </div>
+        
 {% endblock content %}

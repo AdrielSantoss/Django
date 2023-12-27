@@ -2,7 +2,7 @@
     --main-bg-color: rgb(156, 0, 0);;
 }
 
-* {
+*, .row, .col {
     padding: 0;
     margin: 0;
 }
