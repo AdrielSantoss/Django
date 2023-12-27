@@ -1,0 +1,86 @@
+:root {
+    --main-bg-color: rgb(156, 0, 0);;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(236, 236, 236);
+}
+
+.header-container {
+    background-color: var(--main-bg-color);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.search-container input {
+    max-width: 45%;
+}
+
+.search-form {
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.input-group input {
+    border: 1px solid var(--main-bg-color);
+}
+
+#icon-container {
+    background-color: var(--main-bg-color);
+    color: white;
+    cursor: pointer;
+}
+
+#icon-container:hover {
+    transform: scale(1.2);
+    transition: 200ms;
+}
+
+.footer-container {
+    background-color: var(--main-bg-color);
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    
+}
+
+.cards-container {
+    margin-top: 20px;
+    margin: 5px;
+}
+
+#card-header {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+}
+
+
+
