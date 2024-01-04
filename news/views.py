@@ -2,13 +2,15 @@ from django.shortcuts import render
 
 from utils.factory import generate_new
 
+from .models import New
+
 def Home(request):
-    generate_new()
-    return render(request, 'news/pages/home.html', context= {
-        "news": [generate_new() for _ in range(5)]
+    news = New.objects.all().order_by('-id')
+    return render(request, 'news/pages/home.html', context = {
+        "news": news
     })
 
-def New(request, id):
-    return render(request, 'news/pages/new.html', context={
+def NewPage(request, id):
+    return render(request, 'news/pages/new.html', context = {
         'id': id
     })
